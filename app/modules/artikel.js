@@ -2,6 +2,7 @@
 
 import Navbar         from '../components/navbar.js';
 import Footer         from '../components/footer.js';
+import Banner from '../components/banner.js';
 import ArtikelService from '../services/artikelService.js';
 import CardArtikel    from '../templates/cardArtikel.js';
 import DataLoader     from '../core/dataLoader.js';
@@ -115,6 +116,7 @@ if (data.content_html) {
         onerror="this.src='${placeholder}'"
       >
       ${galeriHtml}  
+      <div id="banner-middle"></div>
       <div class="artikel-konten">${konten}</div>
       ${relatedHtml}
     </main>`;
