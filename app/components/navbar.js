@@ -4,6 +4,8 @@
 import DataLoader from '../core/dataLoader.js';
 import CONFIG    from '../core/config.js';
 
+import Banner from './banner.js';
+
 const Navbar = {
   async render(containerId = 'navbar') {
     const config = await DataLoader.loadJSON('config.json');
@@ -75,7 +77,10 @@ const Navbar = {
     if (container) container.innerHTML = html;
 
     this._bindEvents();
+     //banner iklan atau pengumuman
+    await Banner.render();
   },
+
 
   _bindEvents() {
     // Hamburger toggle untuk mobile
