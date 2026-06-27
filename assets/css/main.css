@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Inter:wght@100..900&display=swap');
 
 /* --- TOKEN SISTEM --- */
 :root {
@@ -16,7 +17,7 @@
   --aksen:       #4d7c0f;
   --aksen-hover: #65a30d;
   --putih:       #ffffff;
-  --font-display: 'Inter', serif;
+  --font-display: 'Cormorant SC', serif;
   --font-body:    'Inter', sans-serif;
   --radius:       4px;
   --transisi:     0.2s ease;
@@ -1188,8 +1189,8 @@ a:hover { color: var(--aksen); }
 }
 
 .pengin-layout .card-pengin-judul {
-  font-family: var(--font-display);
-  font-size: 3rem;
+  font-family: var(--font-body);
+  font-size: 2rem;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -1338,7 +1339,7 @@ a:hover { color: var(--aksen); }
 }
 
 .pengin-grid .card-pengin-judul {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 2rem;
   line-height: 1.25;
   font-weight: 700;
