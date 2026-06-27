@@ -65,6 +65,15 @@ a:hover { color: var(--aksen); }
   top: 0;
   z-index: 100;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #ffffff;
+}
 /* Desktop: logo terpusat di atas, menu di bawahnya - gaya Kompas.id */
 .navbar-inner {
   max-width: 1100px;
