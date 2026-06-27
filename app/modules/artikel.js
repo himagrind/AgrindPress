@@ -122,6 +122,7 @@ if (data.content_html) {
     </main>`;
 
   document.getElementById('artikel-body').innerHTML = html;
+  await Banner.render();
 }
 
 init();
