@@ -126,6 +126,9 @@ a:hover { color: var(--aksen); }
         z-index: 9999;
         background: #fff;
     }
+   .navbar-logo {
+        margin-top: 8px;
+    }
 }
 
 .nav-list {
