@@ -351,7 +351,91 @@ a:hover { color: var(--aksen); }
 /* =============================================
    HALAMAN ARTIKEL
    ============================================= */
-.artikel-container { max-width: 720px; margin: 0 auto; padding: 140px 20px 16px; }
+.artikel-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 130px 20px 16px;
+}
+
+/* BANNER / AD SLOT */
+#banner-top,
+#banner-middle,
+#banner-small {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+#banner-top {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+}
+
+#banner-top:empty {
+  min-height: clamp(96px, 14vw, 180px);
+}
+
+#banner-middle {
+  max-width: 900px;
+  margin: 28px auto;
+}
+
+#banner-small {
+  max-width: 1100px;
+  margin: 28px auto 0;
+}
+
+.banner-shell {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.banner-shell:hover {
+  border-color: var(--aksen);
+}
+
+.banner-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.banner-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.banner-media--video {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+}
+
+.banner-media--image {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  #banner-top,
+  #banner-middle,
+  #banner-small {
+    padding: 0 16px;
+  }
+
+  #banner-top {
+    margin-bottom: 20px;
+  }
+
+  #banner-middle,
+  #banner-small {
+    margin-top: 20px;
+  }
+}
 .artikel-label {
   font-size: 0.75rem;
   font-weight: 600;
